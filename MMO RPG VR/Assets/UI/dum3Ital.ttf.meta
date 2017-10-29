@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6fe08d8d930fe445392823d861eddaa4
+timeCreated: 1508281894
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dumbledor 3 Italic
+  fontNames:
+  - Dumbledor 3 Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

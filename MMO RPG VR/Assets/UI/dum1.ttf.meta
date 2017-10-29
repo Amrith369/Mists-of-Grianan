@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 88375eb6f3a8f4c5fac6f18d72ea890e
+timeCreated: 1508282926
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dumbledor 1
+  fontNames:
+  - Dumbledor 1
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

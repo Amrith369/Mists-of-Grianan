@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1c8132f46fd0047aaacb3b0f66782126
+timeCreated: 1508197123
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Livingstone
+  fontNames:
+  - Livingstone
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
