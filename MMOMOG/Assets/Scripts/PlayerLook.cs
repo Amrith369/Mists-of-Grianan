@@ -7,7 +7,7 @@ public class PlayerLook : MonoBehaviour
     public Transform playerBody;
     public float mouseSensitivity;
 
-    float xAxisClamp = 0.0f;
+    public float xAxisClamp = 0.0f;
 
     void Awake()
     {

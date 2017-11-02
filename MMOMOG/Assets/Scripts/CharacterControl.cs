@@ -8,6 +8,7 @@ public class CharacterControl : MonoBehaviour {
 	public float sprint = 12.0f;
 	public float jump = 8.0f;
 	public float gravity = 20.0f;
+	public float speed = 0;
 	private Vector3 moveDirection = Vector3.zero;
 	public GameObject pauseMenu;
 	private bool menuOpen;
@@ -25,10 +26,17 @@ public class CharacterControl : MonoBehaviour {
 		moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
 		moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= walk;
+
 		if (Input.GetButtonDown ("Jump")) 
 		{
 			//controller.moveDirection.y = jump;
-			moveDirection.y = (jump * Time.deltaTime) + (gravity);
+			//moveDirection.y += (jump / (Time.deltaTime * Time.deltaTime));
+			//moveDirection.y = jump * Time.deltaTime * Time.deltaTime - gravity * (Time.deltaTime * Time.deltaTime)/2;
+			speed = jump * 2;
+			moveDirection.y += speed * Time.deltaTime;
+			
+		} else {
+			//moveDirection.y -= (gravity / (Time.deltaTime * Time.deltaTime));
 		}
 		if (Input.GetButton ("Sprint")) {
 			walk = sprint;
@@ -38,7 +46,10 @@ public class CharacterControl : MonoBehaviour {
 			walk = 6.0f;
 		}
 
-		moveDirection.y -= 3*(gravity * Time.deltaTime);
+		moveDirection.y += speed * Time.deltaTime;
+		speed -= gravity;
+		moveDirection.y -= (gravity * (Time.deltaTime));
+		//print(moveDirection.y);
 		controller.Move (moveDirection * Time.deltaTime);
 	}
 
