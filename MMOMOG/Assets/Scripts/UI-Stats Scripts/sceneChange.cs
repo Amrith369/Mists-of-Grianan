@@ -12,6 +12,7 @@ public class sceneChange : MonoBehaviour {
 	public void NextScene()
 	{
 		SceneManager.LoadScene("FieldOfBeginnings");
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 
 	public void ExitGame()
