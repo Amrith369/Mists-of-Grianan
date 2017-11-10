@@ -10,8 +10,14 @@ public class AveraShop : MonoBehaviour {
 	public GameObject ActionText;
 	public GameObject uiBuilding;
 	public GameObject Player;
+	Collider door;
 
-	
+	void Start ()
+	{
+		door = GetComponent<Collider> ();
+		door.isTrigger = false;
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -25,7 +31,8 @@ public class AveraShop : MonoBehaviour {
 
 		if (Input.GetAxisRaw("Confirm") == 1)
 		{
-			if (theDistance <= 1)
+			door.isTrigger = true;
+			/*if (theDistance <= 1)
 			{
 				//ActionDisplay.SetActive(false);
 				ActionText.SetActive(false);
@@ -33,7 +40,14 @@ public class AveraShop : MonoBehaviour {
 				Cursor.lockState = CursorLockMode.None;
 				Player.SetActive (false);
 				
-			}
+			}*/
 		}
+	}
+
+	void OnCollisionEnter(Collision door)
+	{
+		SceneManager.LoadScene("AveraShop");
+		Cursor.lockState = CursorLockMode.None;
+		Player.SetActive (false);
 	}
 }
