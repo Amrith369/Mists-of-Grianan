@@ -1,36 +1,23 @@
 fileFormatVersion: 2
-guid: 7c17895e15caa4a509ff3aced57f27ba
-timeCreated: 1508533379
+guid: 352e3abcbf3894dd9ba5f423793c8f17
+timeCreated: 1510199214
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Icosphere
-    100002: Icosphere.001
-    100004: Icosphere.002
-    100006: //RootNode
-    400000: Icosphere
-    400002: Icosphere.001
-    400004: Icosphere.002
-    400006: //RootNode
-    2300000: Icosphere
-    2300002: Icosphere.001
-    2300004: Icosphere.002
-    3300000: Icosphere
-    3300002: Icosphere.001
-    3300004: Icosphere.002
-    4300000: Icosphere.002
-    4300002: Icosphere.001
-    4300004: Icosphere
-    6400000: Icosphere
-    6400002: Icosphere.001
-    6400004: Icosphere.002
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 3a056dd751f7046eeb67b80a05975e73, type: 2}
+      name: palette
+    second: {fileID: 2100000, guid: 2a1a8a93e1f97472cbd167916bc6ce44, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,7 +49,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

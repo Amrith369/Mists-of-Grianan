@@ -7,6 +7,7 @@ public class openmenu : MonoBehaviour {
 	public Canvas IngameOption;
 	private bool menuEnabled = false; // call this whatever you want mark
 	public GameObject control;
+	public GameObject cameraControl;
 	public GameObject pausemenu;
 	public Animator anim;
 	public bool IsDisplayed; 
@@ -59,6 +60,8 @@ public class openmenu : MonoBehaviour {
 			menuEnabled = true;
 			IngameOption.enabled = menuEnabled;
 			control.GetComponent<CharacterControl> ().enabled = false;
+			cameraControl.GetComponent<PlayerLook> ().enabled = false;
+			Cursor.lockState = CursorLockMode.None;
 			pausemenu.SetActive (true);
 			anim.SetBool ("IsDisplayed", true);
 			IsDisplayed = false;
@@ -75,6 +78,8 @@ public class openmenu : MonoBehaviour {
 			menuEnabled = false;
 			IngameOption.enabled = menuEnabled;
 			control.GetComponent<CharacterControl> ().enabled = true;
+			cameraControl.GetComponent<PlayerLook> ().enabled = true;
+			Cursor.lockState = CursorLockMode.Locked;
 			pausemenu.SetActive (false);
 			timefin = 2f;
 			tabpressed = false;
