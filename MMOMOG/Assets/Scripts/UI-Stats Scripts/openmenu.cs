@@ -86,6 +86,9 @@ public class openmenu : MonoBehaviour {
 
 		}
 	}
+	public void map() {
+		anim.SetBool ("IsDisplayed", true);
 
 
+	}
 }
