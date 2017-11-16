@@ -13,7 +13,7 @@ public class OpenMap : MonoBehaviour {
 			map.SetActive (true);
 			mapActive = true;
 		} 
-		else if (mapActive = true) {
+		else if (mapActive == true) {
 			map.SetActive (false);
 			mapActive = false;
 		}

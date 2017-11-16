@@ -13,6 +13,10 @@ public class CharacterControl : MonoBehaviour {
 	//public GameObject pauseMenu;
 	private bool menuOpen;
 	public GameObject map;
+	public static float distanceFromTarget;
+	public float toTarget;
+	
+
 
 
 	// Use this for initialization
@@ -53,20 +57,16 @@ public class CharacterControl : MonoBehaviour {
 		//print(moveDirection.y);
 		controller.Move (moveDirection * Time.deltaTime);
 		map.SetActive (false);
+
+		RaycastHit hit;
+		if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward), out hit))
+		{
+			toTarget = hit.distance;
+			distanceFromTarget = toTarget;
+		}
+
+		
 	}
 
-	/*void PauseGame()
-	{
-		if (Input.GetKeyDown (KeyCode.Tab) && menuOpen == false) {
-			print ("Menu Activated");
-			pauseMenu.SetActive (true);
-			menuOpen = true;
-
-		} else if (Input.GetKeyDown (KeyCode.Tab) && menuOpen == true) {
-			print ("Menu Deactivated");
-			pauseMenu.SetActive (false);
-			menuOpen = false;
-
-		}
-	}*/
+	
 }

@@ -19,10 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4462895058310102}
-  - component: {fileID: 114542939308846452}
   - component: {fileID: 95708092809226330}
-  - component: {fileID: 114316912369280878}
-  - component: {fileID: 114287177037542516}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -495,31 +492,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114287177037542516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1050973829364692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa3cd0cc92408f545b55378af4a8c075, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 95708092809226330}
---- !u!114 &114316912369280878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1050973829364692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f96988a0bcbf37141bc3eab8a5b808dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tabp: 0
-  anim: {fileID: 95708092809226330}
 --- !u!114 &114399769308537742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -770,25 +742,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Map
---- !u!114 &114542939308846452
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1050973829364692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58b05bccfc536fe4585a28ec46d9a2c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  rotatenum: 0
-  button0: {fileID: 1365646912979796}
-  button1: {fileID: 1564996565550096}
-  button2: {fileID: 1375407227908710}
-  button3: {fileID: 1348054389879846}
-  button4: {fileID: 1781255856032716}
-  button5: {fileID: 1618926688316676}
 --- !u!114 &114557494491963256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1191,7 +1144,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1365646912979796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 26.75}
+  m_LocalPosition: {x: -500, y: 190, z: 26.75}
   m_LocalScale: {x: 4.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224888781825786694}
@@ -1228,7 +1181,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375407227908710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 26.75}
+  m_LocalPosition: {x: -500, y: 0, z: 26.75}
   m_LocalScale: {x: 4.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224882693518617378}
@@ -1247,7 +1200,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1564996565550096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 26.75}
+  m_LocalPosition: {x: -500, y: 190, z: 26.75}
   m_LocalScale: {x: 4.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224674408936709790}
@@ -1266,7 +1219,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1348054389879846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 26.75}
+  m_LocalPosition: {x: -500, y: -190, z: 26.75}
   m_LocalScale: {x: 4.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224888625726017084}
@@ -1321,7 +1274,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618926688316676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 26.75}
+  m_LocalPosition: {x: -500, y: 190, z: 26.75}
   m_LocalScale: {x: 4.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224622337734775666}
@@ -1360,7 +1313,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781255856032716}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 26.75}
+  m_LocalPosition: {x: -500, y: 190, z: 26.75}
   m_LocalScale: {x: 4.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224929314062423720}
