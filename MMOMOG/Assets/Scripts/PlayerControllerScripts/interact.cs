@@ -8,23 +8,21 @@ public class interact : MonoBehaviour {
 	public string collideobject;
 	public bool hasCollided = false;
 	public string text = "";
-	sceneChangeFade fade = new sceneChangeFade();
+	private sceneChangeFade anotherScript;
 
 
 	void Start () {
+		anotherScript = GetComponent<sceneChangeFade> ();
 	}
 
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.RightArrow)) {
-			fade.Avera ();
-			print ("Teleporting to Avera");
-		}
-
-
+		
 		if (hasCollided == true)
-		{    
+		{   
 			GUI.Box(new Rect(140,Screen.height-50,Screen.width-300,120),(text));
-
+			if (Input.GetAxisRaw("Fire1") > 0) {
+				anotherScript.Avera ();
+			}
 		}
 
 	}
@@ -34,24 +32,17 @@ public class interact : MonoBehaviour {
 		if (hasCollided == true)
 		{    
 			GUI.Box(new Rect(140,Screen.height-50,Screen.width-300,120),(text));
-			print ("gui box");
 		}
 	}
-
 	void OnTriggerEnter(Collider collision)
 	{
-		print ("Collision 1");
 		if (collision.gameObject.tag == "Player") {
 			hasCollided = true;
-			print ("Collision 2");
-
-
 		}
 	}
 
 	void OnTriggerExit(Collider collision){
 		hasCollided = false;
-		print ("Exiting Collision");
 	}
 
 	// Use this for initialization

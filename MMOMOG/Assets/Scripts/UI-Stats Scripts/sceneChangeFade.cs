@@ -45,7 +45,6 @@ public class sceneChangeFade : MonoBehaviour {
 	public void Avera()
 	{
 		countDown = true;
-		print ("On the other side!");
 	}
 	public void AveraWoodland()
 	{
