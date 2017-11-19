@@ -14,6 +14,9 @@ public class sceneChangeFade : MonoBehaviour {
 	public byte alpha = 0;
 	public float fadeTime = 0f;
 	public bool countDown = false;
+	public GameObject icon;
+	private float scaleFactor = 1f;
+	private bool greater = false;
 
 	public void Update ()
 	{
@@ -30,6 +33,21 @@ public class sceneChangeFade : MonoBehaviour {
 
 		if (fadeTime <= 10f) {
 			fadeTime += Time.deltaTime;
+			if (greater == false) {
+				scaleFactor += 0.002f;
+				if (scaleFactor >= 1.02) {
+					greater = true;
+				}
+			} 
+			else if (greater == true) 
+			{
+				scaleFactor -= 0.002f;
+				if (scaleFactor <= 0.98) 
+				{
+					greater = false;
+				}
+			}
+			icon.transform.localScale *= scaleFactor;
 			color = new Color32 (0, 0, 0, alpha);
 			alpha += 5;
 		} 
@@ -45,6 +63,7 @@ public class sceneChangeFade : MonoBehaviour {
 	public void Avera()
 	{
 		countDown = true;
+		print ("Successfully Referenced");
 	}
 	public void AveraWoodland()
 	{

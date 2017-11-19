@@ -19,9 +19,10 @@ public class interact : MonoBehaviour {
 		
 		if (hasCollided == true)
 		{   
-			GUI.Box(new Rect(140,Screen.height-50,Screen.width-300,120),(text));
-			if (Input.GetAxisRaw("Fire1") > 0) {
-				anotherScript.Avera ();
+			//GUI.Box(new Rect(140,Screen.height-50,Screen.width-300,120),(text));
+			print("Gotcha");
+			if (Input.GetAxisRaw("Confirm") > 0) {
+				GetComponent<sceneChangeFade> ().enabled = true;
 			}
 		}
 
@@ -29,15 +30,19 @@ public class interact : MonoBehaviour {
 
 	void OnGUI()
 	{
-		if (hasCollided == true)
+		/*if (hasCollided == true)
 		{    
 			GUI.Box(new Rect(140,Screen.height-50,Screen.width-300,120),(text));
-		}
+		}*/
 	}
 	void OnTriggerEnter(Collider collision)
 	{
 		if (collision.gameObject.tag == "Player") {
 			hasCollided = true;
+			if (Input.GetAxisRaw("Confirm") > 0) {
+				GetComponent<sceneChangeFade> ().enabled = true;
+
+			}
 		}
 	}
 

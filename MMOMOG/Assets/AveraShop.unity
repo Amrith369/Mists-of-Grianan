@@ -280,6 +280,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400132, guid: 7ba9566c23c9b488e8034454b96fe243, type: 3}
   m_PrefabInternal: {fileID: 107053599}
+--- !u!1 &107053601 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100132, guid: 7ba9566c23c9b488e8034454b96fe243, type: 3}
+  m_PrefabInternal: {fileID: 107053599}
+--- !u!114 &107053602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107053601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca7aea3a6fba4d9d8df02988d854996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &122201517
 Prefab:
   m_ObjectHideFlags: 0
@@ -341,6 +356,7 @@ GameObject:
   - component: {fileID: 336552730}
   - component: {fileID: 336552729}
   - component: {fileID: 336552728}
+  - component: {fileID: 336552732}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -410,6 +426,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336552732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336552727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 723c3eeb9b34d49d08377f1f115c88d6, type: 2}
 --- !u!1001 &361435122
 Prefab:
   m_ObjectHideFlags: 0
@@ -587,6 +615,11 @@ Prefab:
 --- !u!1 &361435123 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1871094835322392, guid: 80435886924a14d7988bc14d9feed9a7,
+    type: 2}
+  m_PrefabInternal: {fileID: 361435122}
+--- !u!1 &361435124 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1097013933834498, guid: 80435886924a14d7988bc14d9feed9a7,
     type: 2}
   m_PrefabInternal: {fileID: 361435122}
 --- !u!1001 &506839009
@@ -996,6 +1029,7 @@ MonoBehaviour:
   alpha: 0
   fadeTime: 0
   countDown: 0
+  icon: {fileID: 361435124}
 --- !u!1001 &810873135
 Prefab:
   m_ObjectHideFlags: 0

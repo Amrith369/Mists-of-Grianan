@@ -15,7 +15,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.1284602, g: 0.16455077, b: 0.17647058, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.01
@@ -25905,6 +25905,7 @@ MonoBehaviour:
   alpha: 0
   fadeTime: 0
   countDown: 0
+  icon: {fileID: 1699102076}
 --- !u!1 &532923393
 GameObject:
   m_ObjectHideFlags: 0
@@ -28702,7 +28703,7 @@ MonoBehaviour:
   fireFlies: {fileID: 1870946775}
   moon: {fileID: 734731772}
   secondsInFullDay: 2000
-  currentTimeOfDay: 0.499
+  currentTimeOfDay: 0
   timeMultiplier: 1
 --- !u!1 &579255667
 GameObject:
@@ -34110,6 +34111,10 @@ Prefab:
     - target: {fileID: 400000, guid: 68f8ee736923244e1acb0195cae184fe, type: 3}
       propertyPath: m_LocalScale.z
       value: 17.978306
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 68f8ee736923244e1acb0195cae184fe, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68f8ee736923244e1acb0195cae184fe, type: 3}
@@ -52447,7 +52452,7 @@ GameObject:
   - component: {fileID: 1043439834}
   m_Layer: 4
   m_Name: SecondPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107413,7 +107418,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111997539}
   m_LocalRotation: {x: -0, y: 0.3171109, z: -0, w: 0.9483885}
-  m_LocalPosition: {x: -91.59, y: 23.593, z: 318.788}
+  m_LocalPosition: {x: -91.588, y: 23.593, z: 318.787}
   m_LocalScale: {x: 1, y: 1.1848065, z: 0.7344988}
   m_Children: []
   m_Father: {fileID: 0}
@@ -107431,7 +107436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 2111997539}
-  collideobject: 
+  collideobject: SecondPlayer
   hasCollided: 0
   text: Enter Shoppe
 --- !u!114 &2111997546
@@ -107440,7 +107445,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111997539}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9486011c128944b96963b71022427f46, type: 3}
   m_Name: 
@@ -107451,7 +107456,8 @@ MonoBehaviour:
   targetScene: AveraShop
   alpha: 0
   fadeTime: 2
-  countDown: 0
+  countDown: 1
+  icon: {fileID: 1699102076}
 --- !u!1 &2113495915
 GameObject:
   m_ObjectHideFlags: 0
