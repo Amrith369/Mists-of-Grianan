@@ -15,6 +15,7 @@ public class CharacterControl : MonoBehaviour {
 	public GameObject map;
 	public static float distanceFromTarget;
 	public float toTarget;
+	public Animator anim;
 	
 
 
@@ -32,8 +33,7 @@ public class CharacterControl : MonoBehaviour {
 		moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= walk;
 
-		if (Input.GetButtonDown ("Jump")) 
-		{
+		if (Input.GetButtonDown ("Jump")) {
 			//controller.moveDirection.y = jump;
 			//moveDirection.y += (jump / (Time.deltaTime * Time.deltaTime));
 			//moveDirection.y = jump * Time.deltaTime * Time.deltaTime - gravity * (Time.deltaTime * Time.deltaTime)/2;
@@ -45,9 +45,7 @@ public class CharacterControl : MonoBehaviour {
 		}
 		if (Input.GetButton ("Sprint")) {
 			walk = sprint;
-
-		} else if (Input.GetButton("Sprint") == false)
-		{
+		} else if (Input.GetButton ("Sprint") == false) {
 			walk = 6.0f;
 		}
 
@@ -59,14 +57,22 @@ public class CharacterControl : MonoBehaviour {
 		map.SetActive (false);
 
 		RaycastHit hit;
-		if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward), out hit))
-		{
+		if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit)) {
 			toTarget = hit.distance;
 			distanceFromTarget = toTarget;
 		}
+		if (Input.GetButton ("Sprint") == true && Input.GetAxis ("Vertical") > 0.1) {
+			anim.SetBool ("isStationary", false);
+			anim.SetBool ("isRunning", true);
+		}
+		if (Input.GetButton ("Sprint") == false && Input.GetAxis ("Vertical") > 0.1) {
+			anim.SetBool ("isStationary", false);
+			anim.SetBool ("isRunning", false);
+		}
+		if (Input.GetAxis ("Vertical") < 0.1 && Input.GetButton ("Sprint") == false) {
+			anim.SetBool ("isStationary", true);
+			anim.SetBool ("isRunning", false);
+		}
 
-		
 	}
-
-	
 }
