@@ -61,7 +61,7 @@ public class CharacterControl : MonoBehaviour {
 			toTarget = hit.distance;
 			distanceFromTarget = toTarget;
 		}
-		if (Input.GetButton ("Sprint") == true && Input.GetAxis ("Vertical") > 0.1) {
+		if (Input.GetButton ("Sprint") == true && Input.GetAxis ("Vertical") {
 			anim.SetBool ("isStationary", false);
 			anim.SetBool ("isRunning", true);
 		}
