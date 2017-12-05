@@ -57,22 +57,26 @@ public class CharacterControl : MonoBehaviour {
 		map.SetActive (false);
 
 		RaycastHit hit;
-		if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit)) {
+		if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit)) 
+		{
 			toTarget = hit.distance;
 			distanceFromTarget = toTarget;
 		}
-		if (Input.GetButton ("Sprint") == true && Input.GetAxis ("Vertical") {
-			anim.SetBool ("isStationary", false);
-			anim.SetBool ("isRunning", true);
-		}
-		if (Input.GetButton ("Sprint") == false && Input.GetAxis ("Vertical") > 0.1) {
-			anim.SetBool ("isStationary", false);
-			anim.SetBool ("isRunning", false);
-		}
-		if (Input.GetAxis ("Vertical") < 0.1 && Input.GetButton ("Sprint") == false) {
-			anim.SetBool ("isStationary", true);
-			anim.SetBool ("isRunning", false);
-		}
+		if (Input.GetButton ("Sprint") == true && Input.GetAxis ("Vertical") >= 0.2) 
+			{
+				anim.SetBool ("isStationary", false);
+				anim.SetBool ("isRunning", true);
+			}
+		if (Input.GetButton ("Sprint") == false && Input.GetAxis ("Vertical") > 0.1) 
+			{
+				anim.SetBool ("isStationary", false);
+				anim.SetBool ("isRunning", false);
+			}
+		if (Input.GetAxis ("Vertical") < 0.1 && Input.GetButton("Sprint") == false) 
+			{
+				anim.SetBool ("isStationary", true);
+				anim.SetBool ("isRunning", false);
+			}
 
 	}
 }
