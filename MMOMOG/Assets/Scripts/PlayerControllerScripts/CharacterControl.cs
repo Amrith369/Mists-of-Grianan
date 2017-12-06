@@ -16,15 +16,14 @@ public class CharacterControl : MonoBehaviour {
 	public static float distanceFromTarget;
 	public float toTarget;
 	public Animator anim;
-	
-
-
-
+	public bool Grounded;
+	public Collider ground;
+	public string maptag;
 	// Use this for initialization
 	void Start () {
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		//PauseGame ();
@@ -33,7 +32,9 @@ public class CharacterControl : MonoBehaviour {
 		moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= walk;
 
-		if (Input.GetButtonDown ("Jump")) {
+		Collide;
+
+		if (Input.GetButtonDown ("Jump") && Grounded == true) {
 			//controller.moveDirection.y = jump;
 			//moveDirection.y += (jump / (Time.deltaTime * Time.deltaTime));
 			//moveDirection.y = jump * Time.deltaTime * Time.deltaTime - gravity * (Time.deltaTime * Time.deltaTime)/2;
@@ -78,5 +79,12 @@ public class CharacterControl : MonoBehaviour {
 				anim.SetBool ("isRunning", false);
 			}
 
+	}
+	void Collide(Collision collider) {
+		if (collider.gameObject.tag == maptag) {
+			Grounded = true;
+		} else {
+			Grounded = false;
+		}
 	}
 }
