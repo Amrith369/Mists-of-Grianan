@@ -13,6 +13,7 @@ public class CharacterControl : MonoBehaviour {
 	//public GameObject pauseMenu;
 	private bool menuOpen;
 	public GameObject map;
+	public GameObject characterScreen;
 	public static float distanceFromTarget;
 	public float toTarget;
 	public Animator anim;
@@ -32,7 +33,7 @@ public class CharacterControl : MonoBehaviour {
 		moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= walk;
 
-		Collide;
+		//Collide;
 
 		if (Input.GetButtonDown ("Jump") && Grounded == true) {
 			//controller.moveDirection.y = jump;
@@ -56,6 +57,7 @@ public class CharacterControl : MonoBehaviour {
 		//print(moveDirection.y);
 		controller.Move (moveDirection * Time.deltaTime);
 		map.SetActive (false);
+		characterScreen.SetActive(false);
 
 		RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit)) 
