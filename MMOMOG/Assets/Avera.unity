@@ -83000,7 +83000,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4038280566455654, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25
+      value: 24.936
       objectReference: {fileID: 0}
     - target: {fileID: 4038280566455654, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
       propertyPath: m_LocalPosition.z
@@ -83212,7 +83212,47 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 135047692904406074, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 23569890352550664, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 135047692904406074, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188462801988422, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 81401794357683282, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 92550282696771274, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 124067955020574938, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 143988189627450014, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 33401101189223774, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1625960397
@@ -89391,7 +89431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.954}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.979}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
