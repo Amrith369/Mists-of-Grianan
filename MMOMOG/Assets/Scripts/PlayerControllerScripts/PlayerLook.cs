@@ -6,7 +6,7 @@ public class PlayerLook : MonoBehaviour
 {
     public Transform playerBody;
     public float mouseSensitivity;
-
+	public float rotatespeed = 6f;
     public float xAxisClamp = 0.0f;
 
     void Awake()
@@ -21,11 +21,11 @@ public class PlayerLook : MonoBehaviour
 
     void RotateCamera()
     {
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
+        float a = Input.GetAxis("Horizontal");
+        float d = Input.GetAxis("Horizontal");
 
-        float rotAmountX = mouseX * mouseSensitivity;
-        float rotAmountY = mouseY * mouseSensitivity;
+        float rotAmountX = a * rotatespeed;
+        float rotAmountY = d * rotatespeed;
 
         xAxisClamp -= rotAmountY;
 
