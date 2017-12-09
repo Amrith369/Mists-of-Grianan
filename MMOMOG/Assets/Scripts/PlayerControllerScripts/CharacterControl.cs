@@ -48,7 +48,7 @@ public class CharacterControl : MonoBehaviour {
 		if (Input.GetButton ("Sprint")) {
 			walk = sprint;
 		} else if (Input.GetButton ("Sprint") == false) {
-			walk = 6.0f;
+			walk = 2f;
 		}
 
 		moveDirection.y += speed * Time.deltaTime;
