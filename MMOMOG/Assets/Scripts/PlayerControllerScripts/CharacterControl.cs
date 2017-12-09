@@ -80,7 +80,12 @@ public class CharacterControl : MonoBehaviour {
 				anim.SetBool ("isStationary", true);
 				anim.SetBool ("isRunning", false);
 			}
-
+		if (Input.GetAxis ("Jump") > 0.1) {
+			anim.SetBool ("isJumping", true);
+		}
+		if (Input.GetAxis ("Jump") < 0.1) {
+			anim.SetBool ("isJumping", false);
+		}
 	}
 	void Collide(Collision collider) {
 		if (collider.gameObject.tag == maptag) {
