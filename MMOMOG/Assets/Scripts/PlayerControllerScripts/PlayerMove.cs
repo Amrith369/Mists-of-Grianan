@@ -28,13 +28,13 @@ public class PlayerMove : MonoBehaviour
 
     void MovePlayer()
     {
-        float horiz = Input.GetAxis("Horizontal");
+      //  float horiz = Input.GetAxis("Horizontal");
         float vert = Input.GetAxis("Vertical");
 
-        Vector3 moveDirSide = transform.right * horiz * walkSpeed;
+       // Vector3 moveDirSide = transform.right * horiz * walkSpeed;
         Vector3 moveDirForward = transform.forward * vert * walkSpeed;
 
-        charControl.SimpleMove(moveDirSide);
+       // charControl.SimpleMove(moveDirSide);
         charControl.SimpleMove(moveDirForward);
 
     }
