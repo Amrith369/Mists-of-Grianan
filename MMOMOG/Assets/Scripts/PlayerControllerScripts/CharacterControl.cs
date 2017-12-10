@@ -70,12 +70,12 @@ public class CharacterControl : MonoBehaviour {
 				anim.SetBool ("isStationary", false);
 				anim.SetBool ("isRunning", true);
 			}
-		if (Input.GetButton ("Sprint") == false && Input.GetAxis ("Vertical") > 0.1) 
+		if (Input.GetButton ("Sprint") == false && Input.GetAxisRaw ("Vertical") == 1) 
 			{
 				anim.SetBool ("isStationary", false);
 				anim.SetBool ("isRunning", false);
 			}
-		if (Input.GetAxis ("Vertical") < 0.1 && Input.GetButton("Sprint") == false) 
+		if (Input.GetAxisRaw ("Vertical") == 0 && Input.GetButton("Sprint") == false) 
 			{
 				anim.SetBool ("isStationary", true);
 				anim.SetBool ("isRunning", false);
@@ -86,6 +86,10 @@ public class CharacterControl : MonoBehaviour {
 		if (Input.GetAxis ("Jump") < 0.1) {
 			anim.SetBool ("isJumping", false);
 		}
+		if (Input.GetAxisRaw ("Vertical") == -1 && Input.GetButton ("Sprint") == false && Input.GetAxis ("Jump") < 0.1)
+		{
+			anim.Play ("WalkBack");
+	}
 	}
 	void Collide(Collision collider) {
 		if (collider.gameObject.tag == maptag) {
