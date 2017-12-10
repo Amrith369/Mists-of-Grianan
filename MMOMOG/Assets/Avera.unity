@@ -36,10 +36,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 3
-  m_ReflectionIntensity: 0
+  m_ReflectionIntensity: 0.249
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 805736680}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+  m_IndirectSpecularColor: {r: 0.02492957, g: 0.049012925, b: 0.103480466, a: 0.249}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -74399,6 +74399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBody: {fileID: 834945708}
   mouseSensitivity: 0.5
+  rotatespeed: 6
   xAxisClamp: 0
 --- !u!81 &1465828907
 AudioListener:
@@ -83215,7 +83216,7 @@ Prefab:
     - target: {fileID: 135047692904406074, guid: e396da910d49cd74fb5e5000990fc295,
         type: 2}
       propertyPath: m_Center.y
-      value: 0.28
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 23569890352550664, guid: e396da910d49cd74fb5e5000990fc295,
         type: 2}
@@ -83249,7 +83250,7 @@ Prefab:
     - target: {fileID: 143988189627450014, guid: e396da910d49cd74fb5e5000990fc295,
         type: 2}
       propertyPath: m_Center.y
-      value: 0.23
+      value: 0.52
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 33401101189223774, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
