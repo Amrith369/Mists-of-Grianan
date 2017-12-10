@@ -12,7 +12,6 @@ public class followCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 		transform.LookAt (target);
 		transform.Translate (Vector3.up * 1, Space.World);
 		transform.Translate (Vector3.back * 1, Space.World);
