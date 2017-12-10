@@ -83252,6 +83252,11 @@ Prefab:
       propertyPath: m_Center.y
       value: 0.52
       objectReference: {fileID: 0}
+    - target: {fileID: 114002967602319648, guid: e396da910d49cd74fb5e5000990fc295,
+        type: 2}
+      propertyPath: tabpressed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 33401101189223774, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e396da910d49cd74fb5e5000990fc295, type: 2}
@@ -94595,14 +94600,14 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1852273248}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1852273251
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1852273248}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1852273252
 Camera:
   m_ObjectHideFlags: 0

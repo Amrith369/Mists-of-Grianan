@@ -48,7 +48,7 @@ public class openmenu : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Tab) && IsDisplayed == false) {
+		if (Input.GetAxisRaw("Status") == 1f && IsDisplayed == false) {
 			anim.SetBool ("IsDisplayed", false);
 			IsDisplayed = true;
 			tabpressed = true;
@@ -56,7 +56,7 @@ public class openmenu : MonoBehaviour {
 
 
 
-		} else if (Input.GetKeyDown (KeyCode.Tab) && IsDisplayed == true) {
+		} else if (Input.GetAxisRaw("Status") == 1f && IsDisplayed == true) {
 			menuEnabled = true;
 			IngameOption.enabled = menuEnabled;
 			control.GetComponent<CharacterControl> ().enabled = false;
