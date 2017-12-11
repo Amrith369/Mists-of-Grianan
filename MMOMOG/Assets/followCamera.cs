@@ -62,8 +62,8 @@ public class followCamera : MonoBehaviour {
 	}
 	void GetInput()
 	{
-		vOrbitInput = Input.GetAxisRaw (input.ORBIT_VERTICAL);
-		hOrbitInput = Input.GetAxisRaw (input.ORBIT_HORIZONTAL);
+		/*vOrbitInput = Input.GetAxisRaw (input.ORBIT_VERTICAL);
+		hOrbitInput = Input.GetAxisRaw (input.ORBIT_HORIZONTAL);*/
 		hOrbitSnapInput = Input.GetAxisRaw (input.ORBIT_HORIZONTAL_SNAP);
 		zoomInput = Input.GetAxisRaw (input.ZOOM);
 	}
@@ -95,7 +95,7 @@ public class followCamera : MonoBehaviour {
 	{
 		if (hOrbitSnapInput > 0)
 		{
-			orbit.yRotation = -180;
+			orbit.yRotation = 180;
 		}
 		orbit.xRotation += -vOrbitInput * orbit.vOrbitSmooth * Time.deltaTime;
 		orbit.yRotation += -hOrbitInput * orbit.hOrbitSmooth * Time.deltaTime;
