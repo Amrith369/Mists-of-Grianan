@@ -20,9 +20,9 @@ public class CharacterControl : MonoBehaviour {
 	public bool Grounded;
 	public Collider ground;
 	public string maptag;
+	//openmenu openmenu;
 	// Use this for initialization
 	void Start () {
-
 	}
 
 	// Update is called once per frame
@@ -65,6 +65,11 @@ public class CharacterControl : MonoBehaviour {
 			toTarget = hit.distance;
 			distanceFromTarget = toTarget;
 		}
+		/* if (openmenu.tabpressed == true)
+		{
+			anim.SetBool ("isStationary", true);
+			anim.SetBool ("isRunning", false);
+		}*/
 		if (Input.GetButton ("Sprint") == true && Input.GetAxis ("Vertical") >= 0.2) 
 			{
 				anim.SetBool ("isStationary", false);
