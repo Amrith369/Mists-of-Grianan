@@ -14,6 +14,7 @@ public class openmenu : MonoBehaviour {
 	public bool tabpressed;
 	public float timefin = 2f;
 	private IEnumerable delaystart;
+	public Animator anim2;
 	public void DisableBoolAnimator (Animator anim)
 	{
 		anim.SetBool ("IsDisplayed", false);
@@ -48,7 +49,7 @@ public class openmenu : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Tab) && IsDisplayed == false) {
+		if (Input.GetAxisRaw("Status") == 1f && IsDisplayed == false) {
 			anim.SetBool ("IsDisplayed", false);
 			IsDisplayed = true;
 			tabpressed = true;
@@ -56,7 +57,7 @@ public class openmenu : MonoBehaviour {
 
 
 
-		} else if (Input.GetKeyDown (KeyCode.Tab) && IsDisplayed == true) {
+		} else if (Input.GetAxisRaw("Status") == 1f && IsDisplayed == true) {
 			menuEnabled = true;
 			IngameOption.enabled = menuEnabled;
 			control.GetComponent<CharacterControl> ().enabled = false;
@@ -66,7 +67,8 @@ public class openmenu : MonoBehaviour {
 			anim.SetBool ("IsDisplayed", true);
 			IsDisplayed = false;
 			tabpressed = true;
-
+			anim2.SetBool ("isStationary", true);
+			anim2.SetBool ("isRunning", false);
 		}
 			
 	

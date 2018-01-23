@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 8fabb58366f562945a15a5b9f6d5406b
+timeCreated: 1512859259
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature.001
+    100002: Chest
+    100004: Cube.001
+    100006: Finger.L
+    100008: Finger.L_end
+    100010: Finger.R
+    100012: Finger.R_end
+    100014: Foot.L
+    100016: Foot.R
+    100018: Hand.L
+    100020: Hand.R
+    100022: Head
+    100024: Head_end
+    100026: Hips
+    100028: LegIK.L
+    100030: LegIK.L_end
+    100032: LegIK.R
+    100034: LegIK.R_end
+    100036: LowerArm.L
+    100038: LowerArm.R
+    100040: LowerLeg.L
+    100042: LowerLeg.R
+    100044: Neck
+    100046: //RootNode
+    100048: PullTarget.L
+    100050: PullTarget.L_end
+    100052: PullTarget.R
+    100054: PullTarget.R_end
+    100056: Shoulder.L
+    100058: Shoulder.R
+    100060: Spine
+    100062: Thumb.L
+    100064: Thumb.R
+    100066: ThumpTip.L
+    100068: ThumpTip.L_end
+    100070: ThumpTip.R
+    100072: ThumpTip.R_end
+    100074: Toe.L
+    100076: Toe.L_end
+    100078: Toe.R
+    100080: Toe.R_end
+    100082: UpperArm.L
+    100084: UpperArm.R
+    100086: UpperLeg.L
+    100088: UpperLeg.R
+    400000: Armature.001
+    400002: Chest
+    400004: Cube.001
+    400006: Finger.L
+    400008: Finger.L_end
+    400010: Finger.R
+    400012: Finger.R_end
+    400014: Foot.L
+    400016: Foot.R
+    400018: Hand.L
+    400020: Hand.R
+    400022: Head
+    400024: Head_end
+    400026: Hips
+    400028: LegIK.L
+    400030: LegIK.L_end
+    400032: LegIK.R
+    400034: LegIK.R_end
+    400036: LowerArm.L
+    400038: LowerArm.R
+    400040: LowerLeg.L
+    400042: LowerLeg.R
+    400044: Neck
+    400046: //RootNode
+    400048: PullTarget.L
+    400050: PullTarget.L_end
+    400052: PullTarget.R
+    400054: PullTarget.R_end
+    400056: Shoulder.L
+    400058: Shoulder.R
+    400060: Spine
+    400062: Thumb.L
+    400064: Thumb.R
+    400066: ThumpTip.L
+    400068: ThumpTip.L_end
+    400070: ThumpTip.R
+    400072: ThumpTip.R_end
+    400074: Toe.L
+    400076: Toe.L_end
+    400078: Toe.R
+    400080: Toe.R_end
+    400082: UpperArm.L
+    400084: UpperArm.R
+    400086: UpperLeg.L
+    400088: UpperLeg.R
+    4300000: Cube.001
+    7400000: Armature.001|Action
+    7400002: Armature.001|Idle
+    7400004: Armature.001|Jump
+    7400006: Armature.001|Run
+    7400008: Armature.001|Run.001
+    7400010: Armature.001|Walk
+    9500000: //RootNode
+    13700000: Cube.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Player
+    second: {fileID: 2100000, guid: 961d3ea6c44bc4ada99ab35f72fad3e0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
